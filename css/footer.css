@@ -1,0 +1,13 @@
+footer {
+    background-color: #353D41;
+    box-shadow: 0px -5px 0px #ffc400;
+}
+
+strong {
+    color: #48b6d4;
+}
+
+.copyright {
+    font-size: 18px;
+    color: #fff;
+}
