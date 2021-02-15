@@ -29,7 +29,7 @@
                         <img src="../img/store.jpg" alt="Banner1" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Confira as maiores tendências de 2021!</h2>
-                            <a href="./cadastro.php" class="main-btn">Ir às compras</a>
+                            <a href="./login.php" class="main-btn">Ir às compras</a>
                         </div>
                     </div>
     
@@ -37,7 +37,7 @@
                         <img src="../img/store2.jpg" alt="Banner2" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Promoções exclusivas pra você!</h2>
-                            <a href="./cadastro.php" class="main-btn">Ir às compras</a>
+                            <a href="./login.php" class="main-btn">Ir às compras</a>
                         </div>
                     </div>
                 </div>

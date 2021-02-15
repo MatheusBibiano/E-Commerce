@@ -1,6 +1,6 @@
 <?php
-session_start();
-$nome = $_SESSION['nome'];
+  session_start();
+  $nome = $_SESSION['nome'];
 ?>
 
 <!doctype html>
@@ -13,7 +13,7 @@ $nome = $_SESSION['nome'];
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon">
    <link href="../css/clientPage/main.css" rel="stylesheet">
-  <title>Loja</title>
+  <title>Loja - Cliente</title>
 </head>
 
 <body>
@@ -31,6 +31,7 @@ $nome = $_SESSION['nome'];
       </div>
     </div>
 
+<!-- Os produtos devem aparecer de forma dinâmica de acordo com o que foi adicionado por admin -->
     <div class="container">
       <!-- Exemplo de linha de colunas -->
       <div class="row justify-content-center">

@@ -1,7 +1,7 @@
 <header>
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="./clientPage.php" class="navbar-brand">
+            <a href="./adminPage.php" class="navbar-brand">
                 <img src="../img/logo.png" alt="Logo" id="#logo"/> Loja
             </a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar-links"
@@ -9,7 +9,9 @@
                 <span><i class="fa fa-navicon"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                <a href="./index.php" class="nav-item nav-link" id="sair-menu">Sair</a>
+                <a href="./insert.php" class="nav-item nav-link" id="insert-menu">Inserir</a>
+                <a href="./edit.php" class="nav-item nav-link" id="edit-menu">Editar</a>
+                <a href="./index.php" class="nav-item nav-link" id="exit-menu">Sair</a>
             </div>
         </nav>
     </div>

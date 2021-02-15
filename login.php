@@ -18,6 +18,7 @@ if(mysqli_num_rows($result) > 0)
 		$nome = $cliente['nome'];
 		$senha_bd = $cliente['senha'];
 		$email = $cliente['email'];
+		$tipo = $cliente['tipo'];
 	}
 	if($senha != $senha_bd)
 	{
@@ -30,16 +31,19 @@ if(mysqli_num_rows($result) > 0)
 	{
 		$_SESSION['nome'] = $nome;
 		$_SESSION['email'] = $email;
-		echo "<script> 
-			window.location.href='./view/clientPage.php';
-		  </script>";
+		if($tipo == 1) {
+		  	header("Location:./view/clientPage.php");
+		}
+		else if($tipo == 0){
+			header("Location:./view/adminPage.php");		
+		}
 	}
 }
 else
 {
 	echo "<script> 
 			alert('Usuário não existe!');
-			window.location.href='./view/login.php';
+			window.location.href='./view/cadastro.php';
 		  </script>";
 }
 

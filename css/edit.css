@@ -1,0 +1,15 @@
+.edit-button {
+    background-color: #aaa;
+    color: #000;
+    border: 1px solid #777;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: .3rem;
+    margin: .5rem;
+}
+
+.edit-button:hover {
+    background-color: #1b50e4;
+    border-color:#0734ad;
+    color: #eee;
+}
