@@ -1,6 +1,6 @@
 <?php
 
-include "connection.php";
+require_once "./connection.php";
 
 $imagem = $_POST['imagem'];
 $nome_produto = $_POST['nome_produto'];
@@ -14,7 +14,7 @@ if(mysqli_query($connection, $sql))
 {
 	echo "<script> 
 			alert('Produto salvo com sucesso!');
-				window.location.href='./view/adminPage.php';
+				window.location.href='./view/admin/list.php';
 		  	</script>";
 }
 else

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/form/main.css" />
-    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="../../img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/form/main.css" />
+    <title>Login</title>
 </head>
 <body>
     <?php
@@ -15,20 +15,18 @@
     ?>
 
     <script>
-        const focus = document.getElementById("cadastro-menu");
+        const focus = document.getElementById("login-menu");
         focus.style.cssText = 'border-bottom: 3px solid #ffc400;';
     </script>
 
-    <form action="../cadastro.php" method="post" class="m-5 p-5">
+    <form action="../../login.php" method="post" class="m-5 p-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-auto column">
-                    <p><h3 id="title">Crie um novo cadastro</h3></p>
-                    <p><input type="text" class="entry" name="nome" id="nome" placeholder="Nome completo" required></p>
-                    <p><input type="email" class="entry" name="email" id="email" placeholder="Email" required></p>
+                    <p><h3 id="title">Faça login</h3></p>
                     <p><input type="text" class="entry" name="login" id="login" placeholder="Login" required></p>
                     <p><input type="password" class="entry" name="senha" id="senha" placeholder="Senha" required></p>
-                    <p><input type="submit" id="submit" value="Cadastrar"></p>
+                    <p><input type="submit" id="submit" value="Entrar"></p>
                 </div>
             </div>
         </div>

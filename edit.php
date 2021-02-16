@@ -1,5 +1,5 @@
 <?php
-    include "connection.php";
+    require_once "./connection.php";
     
     $id_produto = $_POST['id_produto'];
     $imagem = $_POST['imagem'];
@@ -13,7 +13,7 @@
     {
         echo "<script> 
                 alert('Produto editado com sucesso!');
-                    window.location.href='./view/adminPage.php';
+                    window.location.href='./view/admin/list.php';
                 </script>";
     }
     else

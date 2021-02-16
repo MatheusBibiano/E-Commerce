@@ -11,15 +11,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon">
-   <link href="../css/clientPage/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../../img/icone.ico" type="image/x-icon">
+   <link href="../../css/clientPage/main.css" rel="stylesheet">
   <title>Loja - Cliente</title>
 </head>
 
 <body>
 
   <?php
-    require_once "../view/clientHeader.php";
+    require_once "../../view/client/clientHeader.php";
   ?>
 
   <main role="main">
@@ -37,38 +37,38 @@
       <div class="row justify-content-center">
         <div class="col-md-auto border">
           <h2 class="product-title">Conjunto social</h2>
-          <p><img class="product-img" src="../img/conjunto.jpg"></p>
+          <p><img class="product-img" src="../../img/conjunto.jpg"></p>
           <p>
             <a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
             <span class="desconto">25%</span>
-            <img src="../img/cupom.png">
+            <img src="../../img/cupom.png">
           </p>
         </div>
         <div class="col-md-auto border">
           <h2 class="product-title">Blusa de lã</h2>
-          <p><img class="product-img" src="../img/blusa.jpg"></p>
+          <p><img class="product-img" src="../../img/blusa.jpg"></p>
           <p>
             <a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
             <span class="desconto">30%</span>
-            <img src="../img/cupom.png">
+            <img src="../../img/cupom.png">
           </p>
         </div>
         <div class="col-md-auto border">
           <h2 class="product-title">Calças Jeans</h2>
-          <p><img class="product-img" src="../img/jeans.jpg"></p>
+          <p><img class="product-img" src="../../img/jeans.jpg"></p>
           <p>
             <a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
             <span class="desconto">10%</span>
-            <img src="../img/cupom.png">
+            <img src="../../img/cupom.png">
           </p>
         </div>
         <div class="col-md-auto border">
           <h2 class="product-title">Camisas</h2>
-          <p><img class="product-img" src="../img/camisas.jpg"></p>
+          <p><img class="product-img" src="../../img/camisas.jpg"></p>
           <p>
             <a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a>
             <span class="desconto">15%</span>
-            <img src="../img/cupom.png">
+            <img src="../../img/cupom.png">
           </p>
         </div>
       </div>
@@ -80,7 +80,7 @@
   </main>
 
   <?php
-  require_once "../view/footer.php";
+  require_once "../../view/home/footer.php";
   ?>
   <!-- Principal JavaScript do Bootstrap
     ================================================== -->

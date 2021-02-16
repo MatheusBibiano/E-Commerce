@@ -16,7 +16,7 @@ $result = mysqli_query($connection, $sql_login);
 if(mysqli_num_rows($result) > 0) {
 	echo "<script> 
 			alert('Este login já existe!');
-			window.location.href='./view/cadastro.php';
+			window.location.href='./view/home/cadastro.php';
 		  </script>";
 }
 
@@ -27,7 +27,7 @@ else {
 	if(mysqli_query($connection, $sql)) {
 		echo "<script> 
 				alert('Cadastro concluido!');
-				window.location.href='./view/login.php';
+				window.location.href='./view/home/login.php';
 		  	</script>";
     }
     
