@@ -1,0 +1,46 @@
+.nome-produto {
+    border: none;
+    border-bottom: solid 2px;
+    font-weight: bold;
+    margin: .8rem;
+}
+
+.imagem {
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 200px;
+    border-radius: 2px;
+}
+
+.desc {
+    margin: 1.6rem;
+    font-size: 1rem;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.buy-button {
+    margin-top: 2rem;
+    background-color: #00ff62;
+    color: #000;
+    border: 1px solid #00bb5d;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+
+.buy-button:hover {
+    background-color: #01d447;
+    border-color:#009e22;
+}
+
+.msg-home {
+    border: none;
+    border-bottom: solid rgb(238, 22, 94);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

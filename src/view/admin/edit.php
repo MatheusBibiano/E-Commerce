@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../img/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/adminPage/main.css" />
+    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../css/adminPage/main.css" />
     <title>Loja - Edição</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
         };
     </script>
 
-    <form action="../../edit.php" method="post" class="m-5 p-5">
+    <form action="../../edit.php" method="post" enctype="multipart/form-data" class="m-3 p-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-auto column">
@@ -36,7 +36,7 @@
 
                         require_once "../../connection.php";
 
-                        $sql = "SELECT * FROM produto WHERE id_produto = '$id_produto'";
+                        $sql = "SELECT id_produto, nome_produto, descricao, preco FROM produto WHERE id_produto = '$id_produto'";
 
                         $result = mysqli_query($connection, $sql);
                         
@@ -44,11 +44,6 @@
                             echo "
                                 <p><h3 id='title'>Editar produto</h3></p>
                                 <input name='id_produto' value='".$row['id_produto']."' hidden></input>
-                                <p>
-                                    <input type='url' class='entry' name='imagem' id='imagem' placeholder='Imagem' readonly='true' value='".$row['imagem']."' required>
-                                    <button type='button' class='edit-button'
-                                    onclick='edit(".'"imagem"'.")'><i class='fa fa-pencil'></i></button>
-                                </p>
                                 <p>
                                     <input type='text' class='entry' name='nome_produto' id='nome_produto' placeholder='Nome do produto' readonly='true' value='".$row['nome_produto']."' required>
                                     <button type='button' class='edit-button' onclick='edit(".'"nome_produto"'.")'><i class='fa fa-pencil'></i></button>
@@ -61,10 +56,17 @@
                                     <input type='text' class='entry' name='preco' id='preco' placeholder='Preço' readonly='true' value='".$row['preco']."' required>
                                     <button type='button' class='edit-button' onclick='edit(".'"preco"'.")'><i class='fa fa-pencil'></i></button>
                                 </p>
-                                <p><input type='submit' id='submit' value='Salvar'></p>
                             ";
                         }
                     ?>
+                    <p>
+                        <div>
+                            Alterar imagem:
+                            <input type='hidden' name='MAX_FILE_SIZE' value='9999999' />
+                            <p><input type='file' accept='image/*' name='imagem' class='entry' id='imagem' required></p>
+                        </div>
+                    </p>
+                    <p><input type='submit' id='submit' value='Salvar'></p>
                 </div>
             </div>
         </div>

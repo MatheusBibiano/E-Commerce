@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../img/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/adminPage/main.css" />
+    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../css/adminPage/main.css" />
     <title>Loja - Produtos</title>
 </head>
 
@@ -35,9 +35,15 @@
                         window.location.href=path;
                     }
                 </script>
-                <div class='container m-5'>
-                    <h2 class='msg-empty'>Não há produtos cadastrados!</h2>
-                    <button class='direct-button' onclick='direct_to(".'"./insert.php"'.")'>Adicionar produtos</button>
+                <div class='container'>
+                    <div class='row justify-content-center'>
+                        <div class='col-md-auto'>
+                            <h2 class='msg-list'>Não há produtos cadastrados!</h2>
+                            <p>
+                                <button class='direct-button' onclick='direct_to(".'"./insert.php"'.")'>Adicionar produtos</button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             ";
             
@@ -60,7 +66,7 @@
                     echo "
                         <tr>
                             <th scope='row'>".$row['id_produto']."</th>
-                            <td><img src='".$row['imagem']."' class='img-product' alt='Imagem'/></td>
+                            <td><img src='../../../uploads/".$row['imagem']."' class='img-product' alt='Imagem'/></td>
                             <td>".$row['nome_produto']."</td>
                             <td>".$row['descricao']."</td>
                             <td>R$".$row['preco']."</td>

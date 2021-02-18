@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../font/Montserrat/Montserrat-Regular.ttf");
+    src: url("../../font/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: "Sofia";
-    src: url("../font/Sofia/Sofia-Regular.ttf");
+    src: url("../../font/Sofia/Sofia-Regular.ttf");
 }
 
 * {

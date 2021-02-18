@@ -11,8 +11,8 @@ $nome = $_SESSION['nome'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../img/icone.ico" type="image/x-icon">
-    <link href="../../css/clientPage/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link href="../../css/adminPage/main.css" type="text/css" rel="stylesheet">
     <title>Loja - Admin</title>
 </head>
 
@@ -31,15 +31,14 @@ $nome = $_SESSION['nome'];
 
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Olá, <?php echo $nome ?></h1>
+                <h1 class="display-3">Olá, <?php echo $nome ?>!</h1>
             </div>
         </div>
 
-        <!-- Os produtos devem aparecer de forma dinâmica de acordo com o que foi adicionado por admin -->
-        <div class="container product-grid">
-
-            
-
+        <div class="container">
+            <div class='row justify-content-center'>
+                <?php require_once "../../productGrid.php"; ?>
+            </div>
         </div>
 
     </main>
