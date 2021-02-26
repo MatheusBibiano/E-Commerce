@@ -1,4 +1,11 @@
-<?php session_start()?>
+<?php
+    session_start();
+
+    if (!isset($_SESSION['nome'])) {
+        unset($_SESSION['nome']);
+        header("Location: ../home/login.php");
+    }    
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

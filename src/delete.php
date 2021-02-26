@@ -1,36 +1,36 @@
 <?php
-    require_once "./connection.php";
-    
-    $id_produto = $_GET['id_produto'];
 
-    $sql = "SELECT imagem FROM produto WHERE id_produto = '$id_produto'";
+require_once "./connection.php";
 
-    try {
-        $stmt = $connection->prepare($sql);
-        $stmt->execute();
+$id_produto = $_GET['id_produto'];
 
-    } catch(PDOException $err) {
-        echo "ERRO: ".$err->getMessage();
-    }
+$sql = "SELECT imagem FROM produto WHERE id_produto = '$id_produto'";
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $path = '../uploads/'.$row['imagem'];
-        unlink($path);
-    }
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
 
-    $sql = "DELETE FROM produto WHERE id_produto = '$id_produto'";
+} catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
+}
 
-    try {
-        $stmt = $connection->prepare($sql);
-        $stmt->execute();
-        echo "<script> 
-                alert('Produto deletado com sucesso!');
-                window.location.href='./view/admin/list.php';
-            </script>";
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $path = '../uploads/'.$row['imagem'];
+    unlink($path);
+}
 
-    } catch(PDOException $err) {
-        echo "ERRO: ".$err->getMessage();
-    }
+$sql = "DELETE FROM produto WHERE id_produto = '$id_produto'";
 
-    $connection = null;
-?>
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
+    echo "<script> 
+            alert('Produto deletado com sucesso!');
+            window.location.href='./view/admin/list.php';
+        </script>";
+
+} catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
+}
+
+$connection = null;

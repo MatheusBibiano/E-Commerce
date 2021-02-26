@@ -54,7 +54,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-auto m-5 p-4 border">
+            <div class="col-md-auto m-5 p-4 border about-container">
                 <h3 class="about-title">Contato</h3>
                 <p>
                     <i class="fa fa-phone m-1"></i>
@@ -72,7 +72,7 @@
                     loja@exemplo.com
                 </p>
             </div>
-            <div class="col-md-auto m-5 p-4 border">
+            <div class="col-md-auto m-5 p-4 border about-container">
                 <h3 class="about-title">Redes sociais</h3>
                 <p>
                     <i class="fa fa-facebook-official social-icon"></i>

@@ -17,8 +17,7 @@ try {
 	echo "ERRO: ".$err->getMessage();
 }
 
-if($stmt->rowCount() > 0)
-{
+if($stmt->rowCount() > 0) {
 	while ($cliente = $stmt->fetch(PDO::FETCH_ASSOC))
 	{
 		$nome = $cliente['nome'];
@@ -53,5 +52,4 @@ else
 		  </script>";
 }
 
-
-?>
+$connection = null;

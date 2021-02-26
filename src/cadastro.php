@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require_once "./connection.php";
 
 $nome = $_POST['nome'];
@@ -45,5 +43,3 @@ if($stmt->rowCount() > 0) {
 }
 
 $connection = null;
-
-?>

@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['nome'])) {
+    unset($_SESSION['nome']);
+    header("Location: ../home/login.php");
+}
+
 $nome = $_SESSION['nome'];
 ?>
 

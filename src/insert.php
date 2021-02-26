@@ -26,8 +26,6 @@ if (isset($_FILES['imagem']['name'])) {
 	} catch(PDOException $err) {
 		echo "ERRO: ".$err->getMessage();
 	}
-
-	$connection = null;
 }
 
-?>
+$connection = null;

@@ -45,6 +45,11 @@ main {
     background-color:#ffc400;
 }
 
+.about-container {
+    box-shadow: 5rem 5rem 10rem rgba(0, 0, 0, 0.05),
+                -5rem -5rem 10rem rgba(0, 0, 0, 0.05);
+}
+
 .about-title {
     color: #333;
     margin: 0 0 3rem 0;
