@@ -7,15 +7,30 @@ header, .navbar {
     padding-bottom: 0;
 }
 
-#logo {
-    width: 75px;
+.logo {
+    width: 8.4rem;
+    height: 7.2rem;
+    object-fit: cover;
+    margin-right: 1rem;
+    padding: .5rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
 }
 
 .navbar-brand {
     padding: 0;
+    margin: 0;
     color: #fff;
     font-family: "Sofia";
     font-size: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-brand:hover {
@@ -24,6 +39,8 @@ header, .navbar {
 
 #navbar-links a {
     color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -34,4 +51,8 @@ header, .navbar {
     cursor: pointer;
     border-bottom: 3px solid #212427;
     background-color: #30383b;
+}
+
+#exit-menu:hover {
+    color: rgb(236, 75, 110);
 }

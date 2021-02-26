@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/img/icone.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/form/main.css" />
-    <title>Loja - Inserção</title>
+    <title>Loja | Inserção</title>
 </head>
 <body>
     <?php
@@ -23,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-auto column">
-                    <p><h3 id="title">Inserir produto</h3></p>
+                    <p><h3 class="title-form">Inserir produto</h3></p>
 
                     <p><input type="text" class="entry" name="nome_produto" id="nome_produto" placeholder="Nome do produto" required></p>
 
@@ -34,7 +35,7 @@
                     <input type="hidden" name="MAX_FILE_SIZE" value="9999999" />
                     <p><input type="file" accept="image/*" class="entry" name="imagem" id="imagem" required></p>
 
-                    <p><input type="submit" id="submit" value="Adicionar"></p>
+                    <p><input type="submit" class="submit" value="Adicionar"></p>
                 </div>
             </div>
         </div>

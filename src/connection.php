@@ -5,13 +5,10 @@ $user = "root";
 $pass = "";
 $database = "loja";
 
-$connection = mysqli_connect($server, $user, $pass, $database);
+try {
+	$connection = new PDO("mysql:host=$server;dbname=$database;charset=utf8", $user, $pass);
+	$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if(!$connection)
-{
-	die("Conexão falhou: ".mysqli_connect_error());
+} catch(PDOException $err) {
+	die("Conexão falhou: ".$err->getMessage());
 }
-
-mysqli_set_charset($connection, "utf8");
-
-?>

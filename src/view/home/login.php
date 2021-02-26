@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/img/icone.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/form/main.css" />
     <title>Login</title>
 </head>
@@ -23,10 +23,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-auto column">
-                    <p><h3 id="title">Faça login</h3></p>
+                    <p><h3 class="title-form">Faça login</h3></p>
                     <p><input type="text" class="entry" name="login" id="login" placeholder="Login" required></p>
                     <p><input type="password" class="entry" name="senha" id="senha" placeholder="Senha" required></p>
-                    <p><input type="submit" id="submit" value="Entrar"></p>
+                    <p><input type="submit" class="submit m-5" value="Entrar"></p>
                 </div>
             </div>
         </div>

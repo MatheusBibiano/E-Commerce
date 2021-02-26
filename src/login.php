@@ -9,11 +9,17 @@ $senha = md5($_POST['senha']);
 
 $sql = "SELECT * FROM cliente WHERE login = '$login'";
 
-$result = mysqli_query($connection, $sql);
+try {
+	$stmt = $connection->prepare($sql);
+	$stmt->execute();
 
-if(mysqli_num_rows($result) > 0)
+} catch(PDOException $err) {
+	echo "ERRO: ".$err->getMessage();
+}
+
+if($stmt->rowCount() > 0)
 {
-	while($cliente = mysqli_fetch_assoc($result))
+	while ($cliente = $stmt->fetch(PDO::FETCH_ASSOC))
 	{
 		$nome = $cliente['nome'];
 		$senha_bd = $cliente['senha'];

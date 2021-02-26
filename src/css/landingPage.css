@@ -11,7 +11,7 @@ main {
 }
 
 #mainSlider .carousel-caption h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     width: 100%;
     font-weight: bold;
     margin-bottom: 5%;
@@ -25,11 +25,12 @@ main {
     background-color: #ffc400;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    width: 200px;
-    height: 60px;
-    padding: 10px 20px;
-    border-radius: 30px;
+    width: 20rem;
+    height: 6rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
     border: 3px solid transparent;
+    font-size: 1.8rem;
     transition: .5s;
 }
 
@@ -46,8 +47,8 @@ main {
 
 .about-title {
     color: #333;
-    margin: 0 0 30px 0;
-    font-size: 30px;
+    margin: 0 0 3rem 0;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -56,23 +57,23 @@ main {
     border-bottom: 2px solid #333;
     width: 30%;
     position: absolute;
-    top: 60px;
+    top: 6rem;
     left: 35%;
 }
 
 .contact-tile {
     font-weight: bold;
     color:  #48b6d4;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .social-tile {
-    font-size: 16px;
-    margin-left: 5px;
+    font-size: 1.6rem;
+    margin-left: .5rem;
 }
 
 .social-icon {
-    font-size: 20px !important;
+    font-size: 2rem !important;
 }
 
 .fa-facebook-official {

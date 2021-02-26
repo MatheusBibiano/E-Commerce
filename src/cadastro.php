@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once "./connection.php";
 
 $nome = $_POST['nome'];
@@ -8,34 +10,40 @@ $login = $_POST['login'];
 $senha = md5($_POST['senha']);
 $tipo = 1;
 
-$sql_login = "SELECT * FROM cliente 
+$sql = "SELECT * FROM cliente 
 			  WHERE login = '$login'";
 
-$result = mysqli_query($connection, $sql_login);
+try {
+	$stmt = $connection->prepare($sql);
+	$stmt->execute();
 
-if(mysqli_num_rows($result) > 0) {
+} catch(PDOException $err) {
+	echo "ERRO: ".$err->getMessage();
+}
+
+if($stmt->rowCount() > 0) {
 	echo "<script> 
 			alert('Este login já existe!');
 			window.location.href='./view/home/cadastro.php';
 		  </script>";
-}
 
-else {
+} else {
 	$sql = "INSERT INTO cliente(nome, email, login, senha, tipo)
     	    VALUES ('$nome', '$email', '$login', '$senha', '$tipo');";
 
-	if(mysqli_query($connection, $sql)) {
+	try {
+		$stmt = $connection->prepare($sql);
+		$stmt->execute();
 		echo "<script> 
 				alert('Cadastro concluido!');
 				window.location.href='./view/home/login.php';
-		  	</script>";
-    }
-    
-	else {
-		echo "Erro: ".$sql."<br>".mysqli_error($connection);
+	  		</script>";
+
+	} catch(PDOException $err) {
+		echo "ERRO: ".$err->getMessage();
 	}
 }
 
-mysqli_close($connection);
+$connection = null;
 
 ?>

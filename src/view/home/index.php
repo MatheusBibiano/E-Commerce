@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../../img/icone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/img/icone.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/index/main.css" />
-    <title>Loja</title>
+    <title>Loja | Home</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../../../img/store.jpg" alt="Banner1" class="d-block w-100" />
+                        <img src="../../../assets/img/store.jpg" alt="Banner1" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Confira as maiores tendências de 2021!</h2>
                             <a href="./login.php" class="main-btn">Ir às compras</a>
@@ -34,9 +34,9 @@
                     </div>
     
                     <div class="carousel-item">
-                        <img src="../../../img/store2.jpg" alt="Banner2" class="d-block w-100" />
+                        <img src="../../../assets/img/store2.jpg" alt="Banner2" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Promoções exclusivas pra você!</h2>
+                            <h2>Promoções exclusivas para você!</h2>
                             <a href="./login.php" class="main-btn">Ir às compras</a>
                         </div>
                     </div>

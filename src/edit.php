@@ -9,9 +9,15 @@
 
     $sql = "SELECT imagem FROM produto WHERE id_produto = '$id_produto'";
 
-    $result = mysqli_query($connection, $sql);
+    try {
+        $stmt = $connection->prepare($sql);
+        $stmt->execute();
 
-    while ($row = mysqli_fetch_assoc($result)) {
+    } catch(PDOException $err) {
+        echo "ERRO: ".$err->getMessage();
+    }
+
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $path = '../uploads/'.$row['imagem'];
         unlink($path);
     }
@@ -23,21 +29,20 @@
         move_uploaded_file($imagem['tmp_name'], $dir . $novo_nome);
         
         $sql = "UPDATE produto SET imagem = '$novo_nome', nome_produto =  '$nome_produto', descricao = '$desc ', preco = '$preco' WHERE id_produto = '$id_produto'";
-    
-        if(mysqli_query($connection, $sql))
-        {
+
+        try {
+            $stmt = $connection->prepare($sql);
+            $stmt->execute();
             echo "<script> 
                     alert('Produto editado com sucesso!');
-                        window.location.href='./view/admin/list.php';
-                    </script>";
-        }
-        else
-        {
-            echo "Erro: ".$sql."<br>".mysqli_error($connection);
+                    window.location.href='./view/admin/list.php';
+                </script>";
+
+        } catch(PDOException $err) {
+            echo "ERRO: ".$err->getMessage();
         }
     
-        mysqli_close($connection);
-    } else {
-        echo "<p>AAAAAAAAAAAAAAAAAA</p>";
+        $connection = null;
     }
+
 ?>

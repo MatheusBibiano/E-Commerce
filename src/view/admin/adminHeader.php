@@ -2,7 +2,8 @@
     <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
             <a href="./adminPage.php" class="navbar-brand">
-                <img src="../../../img/logo.png" alt="Logo" id="#logo"/> Loja
+                <img src="../../../assets/img/logo.png" alt="Logo" class="logo"/>
+                <h1 class="title">Loja</h1>
             </a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbar-links"
                 aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">

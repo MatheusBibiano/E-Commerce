@@ -1,12 +1,18 @@
 <?php
-    
+
     require_once "../../connection.php";
 
     $sql = "SELECT imagem, nome_produto, descricao, preco FROM produto;";
 
-    $result = mysqli_query($connection, $sql);
+    try {
+        $stmt = $connection->prepare($sql);
+        $stmt->execute();
 
-    if (mysqli_num_rows($result) == 0) {
+    } catch(PDOException $err) {
+        echo "ERRO: ".$err->getMessage();
+    }
+
+    if ($stmt->rowCount() == 0) {
         echo "
             <div class='container'>
                 <div class='row justify-content-center'>
@@ -18,9 +24,9 @@
         ";
 
     } else {
-        while ($row = mysqli_fetch_assoc($result)) {
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "
-                <div class='col-md-auto border p-4'>
+                <div class='col-md-auto border p-4 product-container'>
                     <div class='row'><h3 class='nome-produto'>".$row['nome_produto']."</h3></div>
                     <div class='row'>
                         <img src='../../../uploads/".$row['imagem']."' class='imagem'>

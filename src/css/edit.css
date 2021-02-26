@@ -4,8 +4,9 @@
     border: 1px solid #777;
     border-radius: 2px;
     text-transform: uppercase;
-    padding: .5rem .8rem .5rem .8rem;
+    padding: .5rem 1.2rem .5rem 1.2rem;
     margin: .5rem;
+    font-size: 1.7rem;
 }
 
 .edit-button:hover {

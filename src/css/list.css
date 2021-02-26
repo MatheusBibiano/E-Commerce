@@ -3,11 +3,13 @@
     border-bottom: solid rgb(238, 22, 94);
     padding: 1rem;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    font-size: 3rem;
 }
 
 .direct-button {
     margin-top: 6rem;
+    margin-bottom: 6rem;
     background-color: #ffc400;
     color: #000;
     border: 1px solid #bb8f00;
@@ -23,8 +25,8 @@
 }
 
 .table {
-    margin-top: 88px;
-    margin-bottom: 20%;
+    margin-top: 8.2rem;
+    margin-bottom: 25%;
 }
 
 .edit-product-button {
@@ -33,7 +35,8 @@
     border: 1px solid #777;
     border-radius: 2px;
     text-transform: uppercase;
-    padding: .5rem .8rem .5rem .8rem;
+    padding: .5rem 1.2rem .5rem 1.2rem;
+    font-size: 2rem;
 }
 
 .edit-product-button:hover {
@@ -48,7 +51,8 @@
     border: 1px solid #777;
     border-radius: 2px;
     text-transform: uppercase;
-    padding: .5rem .8rem .5rem .8rem;
+    padding: .5rem 1.2rem .5rem 1.2rem;
+    font-size: 2rem;
 }
 
 .delete-product-button:hover {
@@ -64,4 +68,14 @@
     border: solid 1px #aaa;
     border-radius: 3px;
     padding: .3rem;
+}
+
+.table {
+    font-size: 1.5rem;
+}
+
+.table thead tr th, 
+.table tbody tr td,
+.table tbody tr th {
+    text-align: center;
 }

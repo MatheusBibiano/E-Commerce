@@ -1,6 +1,6 @@
 .jumbotron {
     margin-top: 10vh;
-    background-image: url("../../img/fundo.jpg");
+    background-image: url("../../assets/img/fundo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -9,32 +9,10 @@
     background-color: rgba(0, 0, 0, 0.548);
     width: 50%;
     color: #fff;
-    padding: 2%;
+    padding: 2rem 2rem;
     text-align: center;
     border-radius: 3px;
-}
-
-.product-title {
-    margin: 5%;
-}
-
-.product-img {
-    border-radius: 5px;
-    width: 30vw;
-}
-
-.btn-secondary {
-    margin-top: 5%;
-    margin-right: 30%;
-    background-color:  #ffc400;
-    border: 1px solid #bb8f00;
-    color: #000;
-}
-
-.btn-secondary:hover {
-    background-color: #d4a301;
-    border-color:#9e7900;
-    color: #eee;
+    font-size: 7rem;
 }
 
 .col-md-auto {
@@ -42,30 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.desconto {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-md-auto {
     margin: 5%;
-}
-
-.navbar-brand {
-    padding: 0;
-    color: #fff;
-    font-family: "Sofia";
-    font-size: 30px;
 }
 
 @media (max-width: 991px) {
@@ -76,16 +31,12 @@ p {
     .col-md-auto {
         margin: 2%;
     }
-
-    .btn-secondary {
-        margin-right: 10%;
-    }
 }
 
 @media (max-width: 767px) {
     .display-3 {
         font-size: 260%;
-        padding: 1%;
+        padding: 1.8rem 1.8rem;
     }
 
     .col-md-auto {
@@ -96,7 +47,6 @@ p {
 @media (max-width: 585px) {
     .display-3 {
         font-size: 230%;
-        padding: 1%;
     }
 
     .col-md-auto {
@@ -107,7 +57,7 @@ p {
 @media (max-width: 497px) {
     .display-3 {
         font-size: 200%;
-        padding: 0.8%;
+        padding: 1.4rem 1.4rem;
     }
 
     .col-md-auto {
@@ -118,7 +68,6 @@ p {
 @media (max-width: 437px) {
     .display-3 {
         font-size: 170%;
-        padding: 0.8%;
     }
 
     .col-md-auto {
@@ -129,15 +78,6 @@ p {
 @media (max-width: 380px) {
     .display-3 {
         font-size: 140%;
-        padding: 0.8%;
-    }
-
-    .desconto {
-        font-size: 1.5rem;
-    }
-
-    .btn-secondary {
-        margin-right: 20%;
     }
 
     .col-md-auto {

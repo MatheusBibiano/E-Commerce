@@ -15,17 +15,19 @@ if (isset($_FILES['imagem']['name'])) {
 	$sql = "INSERT INTO produto(imagem, nome_produto, descricao, preco)
     	    VALUES ('$novo_nome', '$nome_produto', '$desc', replace('$preco','.',','));";
 
-	if(mysqli_query($connection, $sql)) {
+	try {
+		$stmt = $connection->prepare($sql);
+		$stmt->execute();
 		echo "<script> 
-				alert('Produto salvo com sucesso!');
+					alert('Produto salvo com sucesso!');
 					window.location.href='./view/admin/list.php';
 				</script>";
-	}
-	else {
-		echo "Erro: ".$sql."<br>".mysqli_error($connection);
+
+	} catch(PDOException $err) {
+		echo "ERRO: ".$err->getMessage();
 	}
 
-	mysqli_close($connection);
+	$connection = null;
 }
 
 ?>
