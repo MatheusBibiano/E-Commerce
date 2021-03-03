@@ -42,7 +42,7 @@ $nome = $_SESSION['nome'];
         </div>
 
         <div class="container">
-            <div class='row justify-content-center'>
+            <div class='row'>
                 <?php require_once "../../productGrid.php"; ?>
             </div>
         </div>

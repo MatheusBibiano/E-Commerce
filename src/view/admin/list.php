@@ -44,6 +44,8 @@
         }
 
         if ($stmt->rowCount() == 0) {
+            $_SESSION['isDBEmpty'] = true;
+
             echo "
                 <script> 
                     function direct_to(path) {
@@ -63,6 +65,8 @@
             ";
             
         } else {
+            $_SESSION['isDBEmpty'] = false;
+
             echo "
                 <table class='table'>
                     <thead class='thead-dark'>

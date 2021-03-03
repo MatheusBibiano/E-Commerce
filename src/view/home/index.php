@@ -16,6 +16,11 @@
         require_once "./header.php";
     ?>
 
+    <script>
+        const focus = document.getElementById("home-menu");
+        focus.style.cssText = 'border-bottom: 3px solid #ffc400;';
+    </script>
+
     <main>
         <div class="container-fluid">
             <div id="mainSlider" class="carousel slide" data-ride="carousel">

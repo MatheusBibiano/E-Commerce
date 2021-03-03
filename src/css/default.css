@@ -18,6 +18,10 @@
     font-family: "Montserrat";
 }
 
+::selection {
+    background-color: rgba(255, 204, 35, 0.5);
+}
+
 body {
     background-color: #f8f8f8;
 }

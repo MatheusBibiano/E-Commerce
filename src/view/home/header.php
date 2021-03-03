@@ -10,6 +10,7 @@
                 <span><i class="fa fa-navicon"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <a href="./index.php" class="nav-item nav-link" id="home-menu">Home</a>
                 <a href="./cadastro.php" class="nav-item nav-link" id="cadastro-menu">Cadastre-se</a>
                 <a href="./login.php" class="nav-item nav-link" id="login-menu">Login</a>
             </div>

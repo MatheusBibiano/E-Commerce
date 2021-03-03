@@ -24,9 +24,11 @@ if ($stmt->rowCount() == 0) {
     ";
 
 } else {
+    $_SESSION['isDBEmpty'] = false;
+
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "
-            <div class='col-md-auto border p-4 product-container'>
+            <div class='col-md-auto border p-2 product-container'>
                 <div class='row'><h3 class='nome-produto'>".$row['nome_produto']."</h3></div>
                 <div class='row'>
                     <img src='../../../uploads/".$row['imagem']."' class='imagem'>
